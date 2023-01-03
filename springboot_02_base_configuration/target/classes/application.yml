@@ -1,2 +1,7 @@
 server:
   port: 80
+
+lession: SpringBoot
+
+user:
+  name1: yy
