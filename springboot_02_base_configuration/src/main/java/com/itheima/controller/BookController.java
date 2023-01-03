@@ -1,5 +1,6 @@
 package com.itheima.controller;
 
+import com.itheima.MyDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -25,6 +26,9 @@ public class BookController {
     @Autowired
     private Environment env;
 
+    @Autowired
+    private MyDataSource myDataSource;
+
     @GetMapping
     public String getById() {
         System.out.println("springboot is running...");
@@ -32,8 +36,8 @@ public class BookController {
         System.out.println("userName===>" + userName);
         System.out.println("---------------------------");
         System.out.println(env.getProperty("lession"));
-        return "springboot is running... port = 80";
+        System.out.println("---------------------------");
+        System.out.println(myDataSource);
+        return myDataSource + "     springboot is running... port = 80";
     }
-
-
 }
