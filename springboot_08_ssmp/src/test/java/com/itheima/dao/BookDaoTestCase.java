@@ -82,9 +82,10 @@ public class BookDaoTestCase {
     void testGetBy3() {
         LambdaQueryWrapper<Book> wrapper = new LambdaQueryWrapper<>();
         String name = null;
-        wrapper.like(name!= null, Book::getName, name );
+        wrapper.like(name != null, Book::getName, name);
         List<Book> list = bookDao.selectList(wrapper);
         System.out.println(" ");
         list.forEach(book -> System.out.println(book));
     }
+
 }
