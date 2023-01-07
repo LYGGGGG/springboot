@@ -6,15 +6,12 @@ package com.itheima.service;
 */
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.itheima.domain.Book;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 public interface IBookService extends IService<Book> {
 
     List<Book> getAll();
-
-    IPage<Book> getByPage(int current, int size);
+    IPage<Book> getByPage(int current, int size, Book book);
 }
