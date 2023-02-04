@@ -10,8 +10,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.itheima.domain.Book;
 
 import java.util.List;
+
 public interface IBookService extends IService<Book> {
 
     List<Book> getAll();
+
     IPage<Book> getByPage(int current, int size, Book book);
 }

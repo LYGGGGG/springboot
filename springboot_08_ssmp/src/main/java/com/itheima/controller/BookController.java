@@ -58,8 +58,8 @@ public class BookController {
     }*/
 
     @GetMapping("/{cur}/{size}")
-    public R getPage(@PathVariable int cur, @PathVariable int size,Book book) {
-        IPage<Book> page = bookService.getByPage(cur, size,book);
+    public R getPage(@PathVariable int cur, @PathVariable int size, Book book) {
+        IPage<Book> page = bookService.getByPage(cur, size, book);
         //如果当前页码值大于了总页码值，那么重新执行查询操作，使用最大页码值作为当前页码值
         if (cur > page.getPages()) {
             page = bookService.getByPage((int) page.getPages(), size, book);

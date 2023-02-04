@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@MapperScan("com.itheima.dao")
 public class Springboot05MybatisApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Springboot05MybatisApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Springboot05MybatisApplication.class, args);
+    }
 
 }

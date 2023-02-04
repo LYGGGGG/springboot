@@ -21,7 +21,7 @@ public class R {
         this.flag = flag;
     }
 
-    public R(Boolean flag,String msg) {
+    public R(Boolean flag, String msg) {
         this.flag = flag;
         this.msg = msg;
     }

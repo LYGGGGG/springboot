@@ -11,13 +11,13 @@ import java.util.List;
 @SpringBootTest
 class Springboot06MybatisPlusApplicationTests {
 
-	@Autowired
-	private BookDao bookDao;
+    @Autowired
+    private BookDao bookDao;
 
-	@Test
-	void contextLoads() {
-		List<Book> books = bookDao.selectList(null);
-		books.forEach(book -> System.out.println(book));
-	}
+    @Test
+    void contextLoads() {
+        List<Book> books = bookDao.selectList(null);
+        books.forEach(book -> System.out.println(book));
+    }
 
 }

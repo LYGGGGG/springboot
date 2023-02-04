@@ -12,7 +12,7 @@ class Springboot04Junit02ApplicationTests {
 
     @Test
     void contextLoads() {
-    	bookDao.save();
+        bookDao.save();
     }
 
 }

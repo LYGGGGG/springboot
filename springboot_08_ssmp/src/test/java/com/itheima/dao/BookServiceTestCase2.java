@@ -30,6 +30,7 @@ public class BookServiceTestCase2 {
         boolean save = iBookService.save(book);
         System.out.println(save);
     }
+
     @Test
     void testServiceUpdate() {
         Book book = new Book();
@@ -40,6 +41,7 @@ public class BookServiceTestCase2 {
         boolean save = iBookService.updateById(book);
         System.out.println(save);
     }
+
     @Test
     void testServiceDelete() {
         boolean result = iBookService.removeById(17);

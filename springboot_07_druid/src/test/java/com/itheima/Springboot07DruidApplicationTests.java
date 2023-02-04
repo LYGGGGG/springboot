@@ -15,8 +15,8 @@ class Springboot07DruidApplicationTests {
 
     @Test
     void contextLoads() {
-		List<Book> books = bookDao.selectList(null);
-		books.forEach(book -> System.out.println(book));
-	}
+        List<Book> books = bookDao.selectList(null);
+        books.forEach(book -> System.out.println(book));
+    }
 
 }

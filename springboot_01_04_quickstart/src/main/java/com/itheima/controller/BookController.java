@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/books")
 public class BookController {
     @GetMapping
-    public String getById(){
+    public String getById() {
         System.out.println("SpringBoot is running...2");
         return "SpringBoot is running...2";
     }
